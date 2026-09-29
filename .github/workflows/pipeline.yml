@@ -22,6 +22,7 @@ jobs:
     environment: github-pages
     steps:
       - uses: actions/checkout@v4
+      - run: python3 app.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
